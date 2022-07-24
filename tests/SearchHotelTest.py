@@ -17,3 +17,12 @@ class SearchHotelTest(unittest.TestCase):
         expectedResult = "HOTEL BOOKING"
         actualResult = self.searchHotelPage.getTitlePageText()
         assert actualResult == expectedResult, self.searchHotelPage.takeScreenShot(self.searchHotelPage.driver.current_activity)
+
+    def test_searchHotel(self):
+        self.searchHotelPage.setHotelLocationToJakarta()
+        self.searchHotelPage.setCheckinCheckoutDate()
+        self.searchHotelPage.setAdultCount()
+        expectedResult = "HOTELS IN BANDUNG"
+        actualResult = self.searchHotelPage.clickSearchButton()
+        assert actualResult == expectedResult, self.searchHotelPage.takeScreenShot(
+            self.searchHotelPage.driver.current_activity)
