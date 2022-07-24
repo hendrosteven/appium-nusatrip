@@ -52,6 +52,5 @@ class HotelPage(BasePage):
         self.clickElement(self._searchButton, "id")
         cl.allureLogs("Click on Search Hotel Button")
         element = self.getElement(self._titleText, "id")
-        cl.allureLogs("Get Title Search Result: "+ element.text)
+        cl.allureLogs("Get Title Search Result: " + element.text)
         return element.text
-

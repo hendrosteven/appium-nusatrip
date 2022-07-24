@@ -59,3 +59,18 @@
 22-07-24 01:24:28 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/one
 22-07-24 01:24:28 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/search_hotel
 22-07-24 01:24:31 PM Sunday: INFO: Element found with locatorType id and with locatorString com.nusatrip.android:id/titletext
+22-07-24 02:22:31 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/flightButton
+22-07-24 02:22:32 PM Sunday: INFO: Element found with locatorType id and with locatorString com.nusatrip.android:id/titletext
+22-07-24 02:22:32 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/departureCodeLayout
+22-07-24 02:22:34 PM Sunday: INFO: Clicked on Element with locatorType text and with locatorString Jakarta (CGK)
+22-07-24 02:22:34 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/arrivalCodeLayout
+22-07-24 02:22:36 PM Sunday: INFO: Clicked on Element with locatorType text and with locatorString Denpasar (DPS)
+22-07-24 02:22:36 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/departingDateLayout
+22-07-24 02:22:37 PM Sunday: INFO: Clicked on Element with locatorType xpath and with locatorString /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ListView/android.view.ViewGroup/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.TextView[4]
+22-07-24 02:22:38 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/PassengerLayout
+22-07-24 02:22:39 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/adultsCount
+22-07-24 02:22:39 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/two
+22-07-24 02:22:40 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/done
+22-07-24 02:22:40 PM Sunday: INFO: Clicked on Element with locatorType id and with locatorString com.nusatrip.android:id/search_flight
+22-07-24 02:22:43 PM Sunday: INFO: Element found with locatorType id and with locatorString com.nusatrip.android:id/departairport
+22-07-24 02:22:43 PM Sunday: INFO: Element found with locatorType id and with locatorString com.nusatrip.android:id/arrivalCode
