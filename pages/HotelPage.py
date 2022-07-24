@@ -13,6 +13,7 @@ class HotelPage(BasePage):
     _titleText = "com.nusatrip.android:id/titletext"
 
     _hotelLocation = "com.nusatrip.android:id/searchHotelLocationText"
+    _textJakarta = "Jakarta"
     _checkinDate = "com.nusatrip.android:id/checkInDateLayout"
     _startDate = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ListView/android.view.ViewGroup[1]/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView[3]"
     _endDate = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ListView/android.view.ViewGroup[1]/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView[5]"
@@ -30,4 +31,27 @@ class HotelPage(BasePage):
         cl.allureLogs("Get page title text: " + element.text)
         return element.text
 
+    def setHotelLocationToJakarta(self):
+        self.clickElement(self._hotelLocation, "id")
+        self.clickElement(self._textJakarta, "text")
+        cl.allureLogs("Set Hotel Location Jakarta")
+
+    def setCheckinCheckoutDate(self):
+        self.clickElement(self._checkinDate, "id")
+        self.clickElement(self._startDate, "xpath")
+        self.clickElement(self._endDate, "xpath")
+        self.clickElement(self._doneButton, "id")
+        cl.allureLogs("Set Checkin & Checkout Date")
+
+    def setAdultCount(self):
+        self.clickElement(self._adultCount, "id")
+        self.clickElement(self._one, "id")
+        cl.allureLogs("Set Adult count to one")
+
+    def clickSearchButton(self):
+        self.clickElement(self._searchButton, "id")
+        cl.allureLogs("Click on Search Hotel Button")
+        element = self.getElement(self._titleText, "id")
+        cl.allureLogs("Get Title Search Result: "+ element.text)
+        return element.text
 
