@@ -12,6 +12,7 @@ class SearchFlightTest(unittest.TestCase):
     def classObjects(self):
         self.searchFlightPage = FlightPage(self.driver)
 
+    @pytest.mark.run(order=3)
     def test_openSearchFlightPage(self):
         self.searchFlightPage.clickFlightButton()
         expectedResult = "FLIGHT BOOKING"
@@ -19,6 +20,7 @@ class SearchFlightTest(unittest.TestCase):
         assert actualResult == expectedResult, self.searchFlightPage.takeScreenShot(
             self.searchFlightPage.driver.current_activity)
 
+    @pytest.mark.run(order=4)
     def test_searchFlight(self):
         self.searchFlightPage.setAsal()
         self.searchFlightPage.setTujuan()
